@@ -1,0 +1,25 @@
+pandas: 2.2.3
+scikit-learn: Not installed
+seaborn: 0.13.2
+optuna: 4.1.0
+tqdm: 4.67.1
+torch: 2.5.1+cu124
+lightgbm: 4.5.0
+xgboost: 2.1.3
+transformers: 4.47.1
+sentence_transformers: 3.3.1
+hdbscan: 0.8.40
+pyvi: 0.1.1
+scipy: 1.11.4
+pytorch_lightning: 2.5.0.post0
+rouge: 1.0.1
+bert_score: 0.3.12
+SQLAlchemy: Not installed
+umap_learn: Not installed
+hyperopt: 0.2.7
+datasetsforecast: 1.0.0
+hierarchicalforecast: 1.0.1
+mlforecast: 1.0.0
+neuralforecast: 1.7.7
+utilsforecast: 0.2.10
+cloudpickle: 3.1.0

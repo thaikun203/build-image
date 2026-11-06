@@ -1,0 +1,52 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  creationTimestamp: '2024-11-22T10:37:44Z'
+  generation: 3
+  managedFields:
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          f:egress: {}
+          f:ingress: {}
+          f:podSelector: {}
+          f:policyTypes: {}
+      manager: rancher
+      operation: Update
+      time: '2024-11-22T10:40:15Z'
+  name: jupyter-test
+  namespace: 01102024-fpv4
+  resourceVersion: '426010871'
+  uid: 1e1d0614-f2e6-41d2-8750-aa80e6d136a9
+spec:
+  egress:
+    - ports:
+        - port: 9000
+          protocol: TCP
+        - port: 30900
+          protocol: TCP
+      to:
+        - ipBlock:
+            cidr: 0.0.0.0/24
+        - podSelector: {}
+  ingress:
+    - from:
+        - ipBlock:
+            cidr: 0.0.0.0/24
+        - podSelector: {}
+      ports:
+        - port: 8888
+          protocol: TCP
+  podSelector:
+    matchExpressions:
+      - key: app
+        operator: In
+        values:
+          - jupyterhub
+    matchLabels:
+      app: jupyterhub
+  policyTypes:
+    - Ingress
+    - Egress
+status: {}

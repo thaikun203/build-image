@@ -1,0 +1,61 @@
+.amphi-Console {
+  flex-direction: column;
+  overflow: auto;
+  font-size: var(--jp-ui-font-size0);
+}
+
+.amphi-Console-table {
+  font-family: monospace;
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  color: var(--jp-content-font-color1);
+}
+
+.amphi-Console-table-row td {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.amphi-Console-table-row div, .amphi-Console-table-row pre {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.amphi-Console-date {
+  vertical-align: top;
+  width: 9em;
+  min-width: 9em;
+  max-width: 9em;
+}
+
+.amphi-Console pre {
+  font-size: 11px;
+}
+
+.amphi-Console-title {
+  font-size: var(--jp-ui-font-size1);
+  color: var(--jp-content-font-color1);
+  text-align: left;
+  padding-left: 10px;
+}
+
+.type-button {
+  color: var(--jp-ui-font-color0);
+}
+
+.name-button {
+  color: var(--jp-ui-font-color1);
+}
+
+.filter-list {
+  display: flex;
+}
+
+.amphi-Console-icon-size {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 2px;
+}

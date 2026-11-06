@@ -1,0 +1,41 @@
+{
+  "jupyter.lab.setting-icon": "amphi:pipeline-icon",
+  "jupyter.lab.setting-icon-label": "Amphi Pipeline Editor",
+  "title": "Amphi Pipeline",
+  "description": "Amphi Pipeline Editor Configuration.",
+  "properties": {
+    "enableExecution": {
+      "type": "boolean",
+      "title": "Enable Execution",
+      "description": "Enable pipeline execution and kernel usage.",
+      "default": true
+    },
+    "enableDebugMode": {
+      "type": "boolean",
+      "title": "Enable Debug Mode",
+      "description": "Enable debug mode provide additional messages in the console.",
+      "default": false
+    },
+    "defaultEngineBackend": {
+      "type": "string",
+      "title": "Default Engine for File Browser files",
+      "description": "This parameter defines which backeng engine is used by default when drag and dropping files form the file browser onto the canvas.",
+      "default": ""
+    }
+  },
+  "additionalProperties": false,
+  "type": "object",
+  "jupyter.lab.menus": {
+    "main": [
+      {
+        "id": "jp-mainmenu-help",
+        "items": [
+          {
+            "command": "pipeline-editor:version",
+            "rank": 1
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+FROM lowcodet132/lowcode-ai:ldg_02102026_v4
+
+COPY page_config.json /usr/local/etc/jupyter/labconfig/page_config.json
+COPY lakehouse_api.py /usr/local/lib/python3.11/site-packages/lakehouse_api.py
+
+ENV MLFLOW_TRACKING_URI=http://10.167.104.21:31170 \
+    MLFLOW_S3_ENDPOINT=http://10.167.104.11:9000 \
+    AWS_ACCESS_KEY_ID=pKmaK6vadotUiSaR8xnx \
+    AWS_SECRET_ACCESS_KEY=fmIAVwn7ei4dUWxfzbZmAHPxsPYegriIpw6uRRdI \
+    MODEL_API=http://10.167.104.16:30080/api/v1/models \
+    EXPERIMENT_NAME=iris_prod \
+    ARTIFACT_PATH=model
+
+RUN python3 -c "import lakehouse_api as l; c=l.Config; print({k: getattr(c,k) for k in vars(c) if k.isupper() and 'SECRET' not in k})"

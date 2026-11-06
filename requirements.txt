@@ -1,0 +1,955 @@
+# Python 3.11 | mlflow 3.11.1 | no Spark/JVM
+# Verified: uv pip compile --python-version 3.11 + dry-run install on cp311
+#
+absl-py==2.5.0
+    # via
+    #   keras
+    #   tensorboard
+    #   tensorflow
+aiohappyeyeballs==2.7.1
+    # via aiohttp
+aiohttp==3.14.3
+    # via
+    #   datasetsforecast
+    #   mlflow
+aiosignal==1.4.0
+    # via aiohttp
+alembic==1.13.3
+    # via
+    #   -r final.in
+    #   jupyterhub
+    #   mlflow
+annotated-doc==0.0.5
+    # via fastapi
+annotated-types==0.7.0
+    # via
+    #   -r final.in
+    #   pydantic
+anyio==4.6.0
+    # via
+    #   -r final.in
+    #   httpx
+    #   jupyter-server
+    #   starlette
+argon2-cffi==23.1.0
+    # via
+    #   -r final.in
+    #   jupyter-server
+argon2-cffi-bindings==21.2.0
+    # via
+    #   -r final.in
+    #   argon2-cffi
+arrow==1.3.0
+    # via
+    #   -r final.in
+    #   isoduration
+asttokens==2.4.1
+    # via
+    #   -r final.in
+    #   stack-data
+astunparse==1.6.3
+    # via tensorflow
+async-lru==2.0.4
+    # via
+    #   -r final.in
+    #   jupyterlab
+attrs==24.2.0
+    # via
+    #   -r final.in
+    #   aiohttp
+    #   jsonschema
+    #   referencing
+babel==2.16.0
+    # via
+    #   -r final.in
+    #   jupyterlab-server
+backoff==2.2.1
+    # via posthog
+beautifulsoup4==4.12.3
+    # via
+    #   -r final.in
+    #   nbconvert
+bleach==6.1.0
+    # via
+    #   -r final.in
+    #   nbconvert
+blinker==1.9.0
+    # via flask
+cachetools==7.1.7
+    # via
+    #   mlflow-skinny
+    #   mlflow-tracing
+certifi==2024.8.30
+    # via
+    #   -r final.in
+    #   httpcore
+    #   httpx
+    #   requests
+certipy==0.2.1
+    # via
+    #   -r final.in
+    #   jupyterhub
+cffi==1.17.1
+    # via
+    #   -r final.in
+    #   argon2-cffi-bindings
+    #   clarabel
+    #   cryptography
+charset-normalizer==3.4.0
+    # via
+    #   -r final.in
+    #   requests
+clarabel==0.11.1
+    # via qpsolvers
+click==8.4.2
+    # via
+    #   flask
+    #   huggingface-hub
+    #   mlflow-skinny
+    #   pyiceberg
+    #   uvicorn
+cloudpickle==3.1.2
+    # via mlflow-skinny
+comm==0.2.2
+    # via
+    #   -r final.in
+    #   ipykernel
+contourpy==1.3.2
+    # via matplotlib
+cryptography==43.0.1
+    # via
+    #   -r final.in
+    #   certipy
+    #   google-auth
+    #   mlflow
+cycler==0.12.1
+    # via matplotlib
+databricks-sdk==0.133.0
+    # via
+    #   mlflow-skinny
+    #   mlflow-tracing
+datasetsforecast==1.0.1
+    # via -r final.in
+debugpy==1.8.7
+    # via
+    #   -r final.in
+    #   ipykernel
+decorator==5.1.1
+    # via
+    #   -r final.in
+    #   ipython
+defusedxml==0.7.1
+    # via
+    #   -r final.in
+    #   nbconvert
+distro==1.9.0
+    # via posthog
+docker==7.2.0
+    # via mlflow
+duckdb==0.10.3
+    # via
+    #   duckdb-engine
+    #   pyiceberg
+duckdb-engine==0.9.4
+    # via -r final.in
+executing==2.1.0
+    # via
+    #   -r final.in
+    #   stack-data
+fastapi==0.141.1
+    # via mlflow-skinny
+fastjsonschema==2.20.0
+    # via
+    #   -r final.in
+    #   nbformat
+filelock==3.32.4
+    # via huggingface-hub
+flask==3.1.3
+    # via
+    #   flask-cors
+    #   mlflow
+flask-cors==6.0.5
+    # via mlflow
+flatbuffers==25.12.19
+    # via tensorflow
+fonttools==4.63.0
+    # via matplotlib
+fqdn==1.5.1
+    # via
+    #   -r final.in
+    #   jsonschema
+frozenlist==1.8.0
+    # via
+    #   aiohttp
+    #   aiosignal
+fsspec==2023.12.2
+    # via
+    #   huggingface-hub
+    #   pyiceberg
+gast==0.7.0
+    # via tensorflow
+gitdb==4.0.12
+    # via gitpython
+gitpython==3.1.59
+    # via mlflow-skinny
+google-auth==2.57.0
+    # via databricks-sdk
+google-pasta==0.2.0
+    # via tensorflow
+graphene==3.4.3
+    # via mlflow
+graphql-core==3.2.11
+    # via
+    #   graphene
+    #   graphql-relay
+graphql-relay==3.2.0
+    # via graphene
+greenlet==3.1.1
+    # via
+    #   -r final.in
+    #   sqlalchemy
+grpcio==1.83.0
+    # via
+    #   tensorboard
+    #   tensorflow
+gunicorn==25.3.0
+    # via mlflow
+h11==0.14.0
+    # via
+    #   -r final.in
+    #   httpcore
+    #   uvicorn
+h5py==3.16.0
+    # via
+    #   keras
+    #   tensorflow
+hf-xet==1.6.0
+    # via huggingface-hub
+hierarchicalforecast==1.5.1
+    # via -r final.in
+httpcore==1.0.6
+    # via
+    #   -r final.in
+    #   httpx
+httpx==0.27.2
+    # via
+    #   -r final.in
+    #   huggingface-hub
+    #   jupyterlab
+huey==2.6.0
+    # via mlflow
+huggingface-hub==1.28.0
+    # via skops
+idna==3.10
+    # via
+    #   -r final.in
+    #   anyio
+    #   httpx
+    #   jsonschema
+    #   jupyterhub
+    #   requests
+    #   yarl
+importlib-metadata==8.9.0
+    # via mlflow-skinny
+ipykernel==6.29.5
+    # via
+    #   -r final.in
+    #   jupyterlab
+    #   nbclassic
+ipython==8.18.1
+    # via
+    #   -r final.in
+    #   ipykernel
+ipython-genutils==0.2.0
+    # via
+    #   -r final.in
+    #   jupysql
+    #   nbclassic
+isoduration==20.11.0
+    # via
+    #   -r final.in
+    #   jsonschema
+itsdangerous==2.2.0
+    # via flask
+jedi==0.19.1
+    # via
+    #   -r final.in
+    #   ipython
+jinja2==3.1.4
+    # via
+    #   -r final.in
+    #   flask
+    #   jupysql
+    #   jupyter-server
+    #   jupyterhub
+    #   jupyterlab
+    #   jupyterlab-server
+    #   nbconvert
+joblib==1.5.3
+    # via
+    #   -r final.in
+    #   scikit-learn
+json5==0.9.25
+    # via
+    #   -r final.in
+    #   jupyterlab-server
+jsonpointer==3.0.0
+    # via
+    #   -r final.in
+    #   jsonschema
+jsonschema==4.23.0
+    # via
+    #   -r final.in
+    #   jupyter-events
+    #   jupyterlab-server
+    #   nbformat
+jsonschema-specifications==2024.10.1
+    # via
+    #   -r final.in
+    #   jsonschema
+jupysql==0.10.5
+    # via -r final.in
+jupysql-plugin==0.4.5
+    # via jupysql
+jupyter-client==8.6.3
+    # via
+    #   -r final.in
+    #   ipykernel
+    #   jupyter-server
+    #   nbclient
+jupyter-core==5.7.2
+    # via
+    #   -r final.in
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-server
+    #   jupyterlab
+    #   nbclient
+    #   nbconvert
+    #   nbformat
+jupyter-events==0.10.0
+    # via
+    #   -r final.in
+    #   jupyter-server
+    #   jupyterhub
+jupyter-lsp==2.2.5
+    # via
+    #   -r final.in
+    #   jupyterlab
+jupyter-server==2.14.2
+    # via
+    #   -r final.in
+    #   jupyter-lsp
+    #   jupyterlab
+    #   jupyterlab-server
+    #   nbgitpuller
+    #   notebook-shim
+jupyter-server-terminals==0.5.3
+    # via
+    #   -r final.in
+    #   jupyter-server
+jupyterhub==5.2.0
+    # via -r final.in
+jupyterlab==4.2.5
+    # via -r final.in
+jupyterlab-pygments==0.3.0
+    # via
+    #   -r final.in
+    #   nbconvert
+jupyterlab-server==2.27.3
+    # via
+    #   -r final.in
+    #   jupyterlab
+keras==3.5.0
+    # via
+    #   -r final.in
+    #   tensorflow
+kiwisolver==1.5.0
+    # via matplotlib
+libclang==18.1.1
+    # via tensorflow
+lightgbm==4.7.0
+    # via -r final.in
+lz4==4.4.5
+    # via trino
+mako==1.3.5
+    # via
+    #   -r final.in
+    #   alembic
+markdown==3.10.3
+    # via tensorboard
+markdown-it-py==4.2.0
+    # via rich
+markupsafe==3.0.1
+    # via
+    #   -r final.in
+    #   flask
+    #   jinja2
+    #   mako
+    #   nbconvert
+    #   werkzeug
+matplotlib==3.8.2
+    # via
+    #   -r final.in
+    #   hierarchicalforecast
+    #   mlflow
+    #   pandas
+matplotlib-inline==0.1.7
+    # via
+    #   -r final.in
+    #   ipykernel
+    #   ipython
+mdurl==0.1.2
+    # via markdown-it-py
+mistune==3.0.2
+    # via
+    #   -r final.in
+    #   nbconvert
+ml-dtypes==0.4.1
+    # via
+    #   keras
+    #   tensorflow
+mlflow==3.11.1
+    # via -r final.in
+mlflow-skinny==3.11.1
+    # via mlflow
+mlflow-tracing==3.11.1
+    # via mlflow
+mmhash3==3.0.1
+    # via pyiceberg
+multidict==6.7.1
+    # via
+    #   aiohttp
+    #   yarl
+mysqlclient==2.2.8
+    # via -r final.in
+namex==0.1.0
+    # via keras
+narwhals==2.25.0
+    # via
+    #   hierarchicalforecast
+    #   lightgbm
+    #   plotly
+    #   scikit-learn
+    #   utilsforecast
+nbclassic==1.1.0
+    # via -r final.in
+nbclient==0.10.0
+    # via
+    #   -r final.in
+    #   nbconvert
+nbconvert==7.16.4
+    # via
+    #   -r final.in
+    #   jupyter-server
+nbformat==5.10.4
+    # via
+    #   -r final.in
+    #   jupyter-server
+    #   nbclient
+    #   nbconvert
+nbgitpuller==1.2.1
+    # via -r final.in
+nest-asyncio==1.6.0
+    # via
+    #   -r final.in
+    #   ipykernel
+    #   nbclassic
+notebook-shim==0.2.4
+    # via
+    #   -r final.in
+    #   jupyterlab
+    #   nbclassic
+numpy==1.24.4
+    # via
+    #   -r final.in
+    #   clarabel
+    #   contourpy
+    #   datasetsforecast
+    #   h5py
+    #   hierarchicalforecast
+    #   keras
+    #   lightgbm
+    #   matplotlib
+    #   ml-dtypes
+    #   mlflow
+    #   pandas
+    #   patsy
+    #   pyarrow
+    #   qpsolvers
+    #   scikit-learn
+    #   scipy
+    #   statsmodels
+    #   tensorboard
+    #   tensorflow
+    #   utilsforecast
+    #   xgboost
+nvidia-nccl-cu12==2.31.2
+    # via xgboost
+oauthlib==3.2.2
+    # via
+    #   -r final.in
+    #   jupyterhub
+opentelemetry-api==1.44.0
+    # via
+    #   mlflow-skinny
+    #   mlflow-tracing
+    #   opentelemetry-sdk
+    #   opentelemetry-semantic-conventions
+opentelemetry-proto==1.27.0
+    # via
+    #   mlflow-skinny
+    #   mlflow-tracing
+opentelemetry-sdk==1.44.0
+    # via
+    #   mlflow-skinny
+    #   mlflow-tracing
+opentelemetry-semantic-conventions==0.65b0
+    # via opentelemetry-sdk
+opt-einsum==3.4.0
+    # via tensorflow
+optree==0.20.0
+    # via keras
+overrides==7.7.0
+    # via
+    #   -r final.in
+    #   jupyter-server
+packaging==24.1
+    # via
+    #   -r final.in
+    #   gunicorn
+    #   huggingface-hub
+    #   ipykernel
+    #   jupyter-server
+    #   jupyterhub
+    #   jupyterlab
+    #   jupyterlab-server
+    #   keras
+    #   matplotlib
+    #   mlflow-skinny
+    #   mlflow-tracing
+    #   nbconvert
+    #   plotly
+    #   skops
+    #   statsmodels
+    #   tensorboard
+    #   tensorflow
+    #   utilsforecast
+    #   wheel
+pamela==1.2.0
+    # via
+    #   -r final.in
+    #   jupyterhub
+pandas==2.3.3
+    # via
+    #   datasetsforecast
+    #   hierarchicalforecast
+    #   mlflow
+    #   pyiceberg
+    #   statsmodels
+    #   utilsforecast
+pandocfilters==1.5.1
+    # via
+    #   -r final.in
+    #   nbconvert
+parso==0.8.4
+    # via
+    #   -r final.in
+    #   jedi
+patsy==1.0.2
+    # via statsmodels
+pexpect==4.9.0
+    # via
+    #   -r final.in
+    #   ipython
+pillow==12.3.0
+    # via matplotlib
+platformdirs==4.3.6
+    # via
+    #   -r final.in
+    #   jupyter-core
+ploomber-core==0.2.27
+    # via
+    #   jupysql
+    #   jupysql-plugin
+plotly==6.9.0
+    # via -r final.in
+posthog==7.43.0
+    # via ploomber-core
+prettytable==3.17.0
+    # via jupysql
+prometheus-client==0.21.0
+    # via
+    #   -r final.in
+    #   jupyter-server
+    #   jupyterhub
+prompt-toolkit==3.0.48
+    # via
+    #   -r final.in
+    #   ipython
+propcache==0.5.2
+    # via
+    #   aiohttp
+    #   yarl
+protobuf==4.25.9
+    # via
+    #   databricks-sdk
+    #   mlflow-skinny
+    #   mlflow-tracing
+    #   opentelemetry-proto
+    #   tensorboard
+    #   tensorflow
+psutil==6.0.0
+    # via
+    #   -r final.in
+    #   ipykernel
+ptyprocess==0.7.0
+    # via
+    #   -r final.in
+    #   pexpect
+    #   terminado
+pure-eval==0.2.3
+    # via
+    #   -r final.in
+    #   stack-data
+pyarrow==13.0.0
+    # via
+    #   -r final.in
+    #   mlflow
+    #   pyiceberg
+pyasn1==0.6.4
+    # via pyasn1-modules
+pyasn1-modules==0.4.2
+    # via google-auth
+pycparser==2.22
+    # via
+    #   -r final.in
+    #   cffi
+pydantic==2.9.2
+    # via
+    #   -r final.in
+    #   fastapi
+    #   jupyterhub
+    #   mlflow-skinny
+    #   mlflow-tracing
+    #   pyiceberg
+pydantic-core==2.23.4
+    # via
+    #   -r final.in
+    #   pydantic
+pygments==2.18.0
+    # via
+    #   -r final.in
+    #   ipython
+    #   nbconvert
+    #   rich
+pyiceberg==0.5.1
+    # via -r final.in
+pyparsing==3.3.2
+    # via
+    #   matplotlib
+    #   pyiceberg
+python-crfsuite==0.9.12
+    # via sklearn-crfsuite
+python-dateutil==2.9.0.post0
+    # via
+    #   -r final.in
+    #   arrow
+    #   graphene
+    #   jupyter-client
+    #   jupyterhub
+    #   matplotlib
+    #   pandas
+    #   strictyaml
+    #   trino
+python-dotenv==1.2.3
+    # via mlflow-skinny
+python-json-logger==2.0.7
+    # via
+    #   -r final.in
+    #   jupyter-events
+pytz==2026.3.post1
+    # via
+    #   pandas
+    #   trino
+pyvi==0.1.1
+    # via -r final.in
+pyyaml==6.0.2
+    # via
+    #   -r final.in
+    #   huggingface-hub
+    #   jupyter-events
+    #   mlflow-skinny
+    #   ploomber-core
+pyzmq==26.2.0
+    # via
+    #   -r final.in
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-server
+qpsolvers==4.13.0
+    # via hierarchicalforecast
+referencing==0.35.1
+    # via
+    #   -r final.in
+    #   jsonschema
+    #   jsonschema-specifications
+    #   jupyter-events
+requests==2.32.3
+    # via
+    #   -r final.in
+    #   databricks-sdk
+    #   datasetsforecast
+    #   docker
+    #   jupyterhub
+    #   jupyterlab-server
+    #   mlflow-skinny
+    #   posthog
+    #   pyiceberg
+    #   tensorflow
+    #   trino
+rfc3339-validator==0.1.4
+    # via
+    #   -r final.in
+    #   jsonschema
+    #   jupyter-events
+rfc3986-validator==0.1.1
+    # via
+    #   -r final.in
+    #   jsonschema
+    #   jupyter-events
+rich==13.9.4
+    # via
+    #   keras
+    #   pyiceberg
+rpds-py==0.20.0
+    # via
+    #   -r final.in
+    #   jsonschema
+    #   referencing
+scikit-learn==1.9.0
+    # via
+    #   -r final.in
+    #   datasetsforecast
+    #   hierarchicalforecast
+    #   mlflow
+    #   pyvi
+    #   sklearn-crfsuite
+    #   skops
+scipy==1.11.4
+    # via
+    #   -r final.in
+    #   clarabel
+    #   lightgbm
+    #   mlflow
+    #   qpsolvers
+    #   scikit-learn
+    #   statsmodels
+    #   xgboost
+send2trash==1.8.3
+    # via
+    #   -r final.in
+    #   jupyter-server
+setuptools==75.1.0
+    # via
+    #   -r final.in
+    #   jupyterlab
+    #   tensorboard
+    #   tensorflow
+six==1.16.0
+    # via
+    #   -r final.in
+    #   asttokens
+    #   astunparse
+    #   bleach
+    #   google-pasta
+    #   python-dateutil
+    #   rfc3339-validator
+    #   tensorboard
+    #   tensorflow
+sklearn-crfsuite==0.5.0
+    # via pyvi
+skops==0.11.0
+    # via mlflow
+smmap==5.0.3
+    # via gitdb
+sniffio==1.3.1
+    # via
+    #   -r final.in
+    #   anyio
+    #   httpx
+sortedcontainers==2.4.0
+    # via pyiceberg
+soupsieve==2.6
+    # via
+    #   -r final.in
+    #   beautifulsoup4
+sqlalchemy==2.0.35
+    # via
+    #   -r final.in
+    #   alembic
+    #   duckdb-engine
+    #   jupysql
+    #   jupyterhub
+    #   mlflow
+sqlglot==19.9.0
+    # via jupysql
+sqlparse==0.6.0
+    # via
+    #   jupysql
+    #   mlflow-skinny
+stack-data==0.6.3
+    # via
+    #   -r final.in
+    #   ipython
+starlette==1.6.0
+    # via fastapi
+statsmodels==0.14.6
+    # via -r final.in
+strictyaml==1.7.3
+    # via pyiceberg
+tabulate==0.10.0
+    # via
+    #   sklearn-crfsuite
+    #   skops
+tensorboard==2.17.1
+    # via tensorflow
+tensorboard-data-server==0.7.2
+    # via tensorboard
+tensorflow==2.17.1
+    # via -r final.in
+tensorflow-io-gcs-filesystem==0.37.1
+    # via tensorflow
+termcolor==3.3.0
+    # via tensorflow
+terminado==0.18.1
+    # via
+    #   -r final.in
+    #   jupyter-server
+    #   jupyter-server-terminals
+threadpoolctl==3.6.0
+    # via scikit-learn
+thrift==0.24.0
+    # via pyiceberg
+tinycss2==1.3.0
+    # via
+    #   -r final.in
+    #   nbconvert
+tornado==6.4.1
+    # via
+    #   -r final.in
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-server
+    #   jupyterhub
+    #   jupyterlab
+    #   nbgitpuller
+    #   terminado
+tqdm==4.70.0
+    # via
+    #   datasetsforecast
+    #   huggingface-hub
+    #   sklearn-crfsuite
+traitlets==5.14.3
+    # via
+    #   -r final.in
+    #   comm
+    #   ipykernel
+    #   ipython
+    #   jupyter-client
+    #   jupyter-core
+    #   jupyter-events
+    #   jupyter-server
+    #   jupyterhub
+    #   jupyterlab
+    #   matplotlib-inline
+    #   nbclient
+    #   nbconvert
+    #   nbformat
+trino==0.335.0
+    # via -r final.in
+types-python-dateutil==2.9.0.20241003
+    # via
+    #   -r final.in
+    #   arrow
+typing-extensions==4.12.2
+    # via
+    #   -r final.in
+    #   aiohttp
+    #   aiosignal
+    #   alembic
+    #   fastapi
+    #   graphene
+    #   grpcio
+    #   huggingface-hub
+    #   mlflow-skinny
+    #   opentelemetry-api
+    #   opentelemetry-sdk
+    #   opentelemetry-semantic-conventions
+    #   optree
+    #   posthog
+    #   pydantic
+    #   pydantic-core
+    #   sqlalchemy
+    #   starlette
+    #   tensorflow
+    #   typing-inspection
+typing-inspection==0.4.2
+    # via fastapi
+tzdata==2026.3
+    # via pandas
+tzlocal==5.4.4
+    # via trino
+uri-template==1.3.0
+    # via
+    #   -r final.in
+    #   jsonschema
+urllib3==2.2.3
+    # via
+    #   -r final.in
+    #   databricks-sdk
+    #   docker
+    #   requests
+utilsforecast==0.2.16
+    # via
+    #   datasetsforecast
+    #   hierarchicalforecast
+uvicorn==0.52.4
+    # via mlflow-skinny
+wcwidth==0.2.13
+    # via
+    #   -r final.in
+    #   prettytable
+    #   prompt-toolkit
+webcolors==24.8.0
+    # via
+    #   -r final.in
+    #   jsonschema
+webencodings==0.5.1
+    # via
+    #   -r final.in
+    #   bleach
+    #   tinycss2
+websocket-client==1.8.0
+    # via
+    #   -r final.in
+    #   jupyter-server
+werkzeug==3.1.8
+    # via
+    #   flask
+    #   flask-cors
+    #   tensorboard
+wheel==0.48.0
+    # via astunparse
+wrapt==2.3.0
+    # via tensorflow
+xgboost==3.2.0
+    # via -r final.in
+xlrd==2.0.2
+    # via datasetsforecast
+yarl==1.24.5
+    # via aiohttp
+zipp==4.1.0
+    # via importlib-metadata
+zstandard==0.25.0
+    # via trino

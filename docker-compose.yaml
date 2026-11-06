@@ -1,0 +1,29 @@
+version: "3"
+services:
+  spark-iceberg:
+    image: jupyterhub-etl:1.4
+    container_name: spark-iceberg
+    volumes:
+      - ./warehouse:/home/iceberg/warehouse
+      - ./notebooks:/home/iceberg/notebooks/notebooks
+    environment:
+      - AWS_SECRET_ACCESS_KEY=minioadmin
+      - AWS_ACCESS_KEY_ID=minioadmin
+      - AWS_REGION=us-east-1
+      - SPARK_CLUSTER=MASTER
+      - MINIO_ALIAS=minio
+      - MINIO_HOST=http://10.168.6.104:9000
+      - MINIO_ACCESS_KEY=minioadmin
+      - MINIO_SECRET_KEY=minioadmin
+      - MINIO_BUCKET=quangvu
+      - MINIO_PREFIX=spark_job_minio
+      - LOCAL_PATH=/home/iceberg/warehouse
+    ports:
+      - 8003:8003
+      - 5001:5000
+      - 8888:8888
+      - 8082:8080
+      - 10000:10000
+      - 10001:10001
+      - 8081:8081
+      - 7077:7077

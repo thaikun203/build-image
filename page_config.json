@@ -1,0 +1,31 @@
+{
+
+  "API_URL": "https://lakehouse-gateway.iocvnpt.com",
+  "AUTH_LOGIN_URL": "https://login-lakehouse.iocvnpt.com",
+  "AUTH_USERNAME": "super",
+  "AUTH_PASSWORD": "HaiKhongHai5#",
+  "AUTH_CLIENT_ID": "data-platform",
+  "AUTH_CLIENT_SECRET": "gkLtPbfSRyiJiY3VtBMJD6hEdI5pgLCi",
+  "TRINO_URL_TYPE": "1",
+  "disabledExtensions": {
+    "@jupyterlab/running-extension": true,
+    "@jupyterlab/extensionmanager-extension": true,
+    "@jupyterlab/debugger-extension": true,
+    "@jupyterlab/mainmenu-extension": true,
+    "@jupyterlab/help-extension": true,
+    "@jupyterlab/workspaces-extension:sidebar": true,
+    "@jupyterlab/toc-extension": true,
+    "@jupyterlab/notebook-extension:toc": true
+  },
+    "MLFLOW_TRACKING_URI":  "http://10.167.104.21:31170",
+    "MLFLOW_S3_ENDPOINT":  "http://10.167.104.11:9000",
+    "AWS_ACCESS_KEY_ID":  "pKmaK6vadotUiSaR8xnx",
+    "AWS_SECRET_ACCESS_KEY":  "fmIAVwn7ei4dUWxfzbZmAHPxsPYegriIpw6uRRdI",
+    "MODEL_API":  "http://10.167.104.16:30080/api/v1/models",
+    "EXPERIMENT_NAME":  "iris_prod",
+    "ARTIFACT_PATH":  "model"
+
+
+
+
+}
